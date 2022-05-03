@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import {Component} from 'react';
 import "./App.css"
@@ -42,8 +43,8 @@ class App extends Component {
 
   render() {
     const {pokemonDetails} = this.state;
-    const renderedPokemonList = pokemonDetails.map((pokemon) => {
-      return (<PokeCard pokemon={pokemon} />);
+    const renderedPokemonList = pokemonDetails.map((pokemon,index) => {
+      return (<PokeCard key={index} pokemon={pokemon} />);
     });
 
     return (
