@@ -28,7 +28,7 @@ const PokeCard = ({pokemon}) => {
         <div className="card text-center mx-auto" style={{"maxWidth" : "18rem"}} key={pokemon.id}>
         <div className="card-header"><b>{pokemon.name}</b></div>
         <div className="card-body">           
-          <h6 className="card-subtitle mb-2 text-muted">Description <br></br>{pokemon.description}</h6> 
+          <h6 className="card-subtitle mb-2 text-muted"style={{color : '#000000'}}>Description <br></br>{pokemon.description}</h6> 
           <img src={pokemon.sprites['front_default']} alt="description" />
           <img src={pokemon.sprites['back_default']}  alt="description"/> 
           <button onClick={() => getAbilitie(pokemon.name)}>VER HABILIDADES</button>
